@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainAppCalculandoIMC"
+    android:background="#bb387e79"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:padding="10dp"
+        android:textColor="#ffff"
+        android:textSize="20sp"
+        android:layout_marginBottom="20dp"
+        android:text="Digite para saber se você está no seu peso ideal:" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:textColor="#ffff"
+        android:text="Seu peso atual em kilos"
+        android:textSize="20sp"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/peso_digitado_id"
+        android:padding="10dp"
+        android:textColor="#fff"
+        android:hint="Ex. 64"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:textSize="20sp"
+        android:textColor="#ffff"
+        android:text="Sua altura em metros"/>
+
+    <EditText
+        android:id="@+id/altura_digitada_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:textColor="#fff"
+        android:hint="Ex.1.60"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:textSize="19sp"
+        android:textColor="#ffff"
+        android:text="Se você é do sexo masculino ou feminino"/>
+
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/sexo_digitado_id"
+        android:padding="10dp"
+        android:textColor="#fff"
+        android:hint="Ex. f"/>
+
+    <TextView
+        android:id="@+id/resultado"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center">
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Calcular"
+        android:background="#384666"
+        android:textColor="#ffff"
+        android:onClick="botaoCalcularClicado"
+        android:id="@+id/botaoCalcularClicado_id"
+        android:layout_margin="2.5dp"/>
+
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Limpar"
+        android:background="#384666"
+        android:textColor="#ffff"
+        android:layout_margin="2.5dp"
+        android:id="@+id/botaoLimparClicado_id"
+        android:onClick="botaoLimparClicado"/>
+
+    </LinearLayout>
+
+</LinearLayout>
