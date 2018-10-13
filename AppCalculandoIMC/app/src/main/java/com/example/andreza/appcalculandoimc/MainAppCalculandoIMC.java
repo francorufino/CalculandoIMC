@@ -8,6 +8,9 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
+//TODO FIX BUG DO BOTAO CALCULAR
+//TODO CENTRALIZAR O TOAST
+
 public class MainAppCalculandoIMC extends AppCompatActivity {
     private EditText pesoDigitado;
     private EditText alturaDigitada;
@@ -30,48 +33,7 @@ public class MainAppCalculandoIMC extends AppCompatActivity {
         this.sexoDigitado = findViewById(R.id.sexo_digitado_id);
         this.botaoCalcularClicado = findViewById(R.id.botaoCalcularClicado_id);
         this.botaoLimparClicado = findViewById(R.id.botaoLimparClicado_id);
-
     }
-
-
-//    @Override
-//    protected void onStart() {
-//        super.onStart();
-//        Toast.makeText(this, "Executando o metodo onStart()", Toast.LENGTH_SHORT).show();
-//        Log.e("primeiro app","Executando o metodo onStart()");
-//    }
-//
-//
-//    @Override
-//    protected void onResume() {
-//        super.onResume();
-//        Log.e("primerio app", "exeutando o metodo onResume");
-//        Toast.makeText(this, "executando o metodo onResume", Toast.LENGTH_SHORT).show();
-//    }
-//
-//    @Override
-//    protected void onPause() {
-//        super.onPause();
-//        Log.e("primeiro app", "executando o metodo onPause()");
-//        Toast.makeText(this, "executando o metodo onPause()", Toast.LENGTH_SHORT).show();
-//
-//    }
-//
-//    @Override
-//    protected void onStop() {
-//        super.onStop();
-//        Log.e("primeiro app", "executando o metodo onStop()");
-//        Toast.makeText(this, "Executando o metodo onStop()", Toast.LENGTH_SHORT).show();
-//
-//    }
-//
-//    @Override
-//    protected void onDestroy() {
-//        super.onDestroy();
-//        Log.e("primeiro app", "executando o metodo onDestroy()");
-//        Toast.makeText(this, "Executando o metodo onDestroy()", Toast.LENGTH_SHORT).show();
-//    }
-
 
     public void botaoCalcularClicado(View view) {
         float imc = 0F;
@@ -150,5 +112,46 @@ public class MainAppCalculandoIMC extends AppCompatActivity {
         alturaDigitada.setText("");
         pesoDigitado.setText("");
     }
+
+    public void botaoComoChegarNoPesoIdeal(View view) {
+    }
 }
 
+
+//    @Override
+//    protected void onStart() {
+//        super.onStart();
+//        Toast.makeText(this, "Executando o metodo onStart()", Toast.LENGTH_SHORT).show();
+//        Log.e("primeiro app","Executando o metodo onStart()");
+//    }
+//
+//
+//    @Override
+//    protected void onResume() {
+//        super.onResume();
+//        Log.e("primerio app", "exeutando o metodo onResume");
+//        Toast.makeText(this, "executando o metodo onResume", Toast.LENGTH_SHORT).show();
+//    }
+//
+//    @Override
+//    protected void onPause() {
+//        super.onPause();
+//        Log.e("primeiro app", "executando o metodo onPause()");
+//        Toast.makeText(this, "executando o metodo onPause()", Toast.LENGTH_SHORT).show();
+//
+//    }
+//
+//    @Override
+//    protected void onStop() {
+//        super.onStop();
+//        Log.e("primeiro app", "executando o metodo onStop()");
+//        Toast.makeText(this, "Executando o metodo onStop()", Toast.LENGTH_SHORT).show();
+//
+//    }
+//
+//    @Override
+//    protected void onDestroy() {
+//        super.onDestroy();
+//        Log.e("primeiro app", "executando o metodo onDestroy()");
+//        Toast.makeText(this, "Executando o metodo onDestroy()", Toast.LENGTH_SHORT).show();
+//    }
